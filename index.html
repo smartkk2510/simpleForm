@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body style="text-align:center">
+
+  <h2>Signup</h2>
+<center><div  style="width:30%;text-align:left;background-color:grey;padding: 7%;font-size:1.5rem;">
+  
+
+  <form name="myform" action="success.html" method="post";>
+    <label for="username">Username</label> 
+    <input type="text" name="username" id="username"> <br> <br>
+  
+  Gender :  <input type="radio" id="male" value="male">Male
+            <input type="radio" id="female" value="female">Female
+            <input type="radio" id="others" value="others">Others  <br><br>
+    
+  Age : <input type="number" name="numb" id="numb"> <br> <br>
+  
+  Password : <input type="password" name="password" id="pass">  <br> <br>
+  
+  Country :
+  <select name="country" id="country">
+      <option value="-1">Select department</option>
+      <option value="India">India</option>
+      <option value="US">US</option>
+      <option value="UAE">UAE</option>
+      <option value="UK">UK</option>
+      </select>
+  <br><br>
+  
+   <input type="checkbox" name="sure"  value="Tamil"> Are you sure
+  
+  
+  <br><br>
+  <h2 id="result"></h2>
+    <input type="submit" value="Submit" onclick="return validateForm(this)" style="margin-left: 30%;width:40%"  >
+  </form>
+</div></center>
+
+<script src="index.js"></script>
+</body>
+</html>
